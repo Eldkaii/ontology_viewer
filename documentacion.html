@@ -166,7 +166,8 @@
           <ul>
             <li>Propósito de la aplicación</li>
             <ul>
-              <li>La aplicación está diseñada para cargar repositorios de investigaciones en formato RDF, explorarlas, y visualizar sus
+              <li>La aplicación está diseñada para cargar repositorios de investigaciones en formato RDF, explorarlas, y
+                visualizar sus
                 componentes (clases, propiedades, individuos, y relaciones) de forma interactiva.</li>
               <li>Permite consultar y analizar datos semánticos a través de una interfaz gráfica, ofreciendo
                 funcionalidades como la visualización de atributos, relaciones y datos inferidos.</li>
@@ -501,6 +502,143 @@
             complejos.</p>
         </article>
 
+        <hr>
+        <hr>
+
+        <article class="blog-post" id="blog-repositories">
+          <h2 class="display-5 link-body-emphasis mb-1">Repositorios de Investigacion</h2>
+          <p class="blog-post-meta">Noviembre 29, 2024 por <a href="#">Equipo de Desarrollo</a></p>
+
+          <p>Los repositorios de investigación que se cargan en el programa representan un modelo estructurado de
+            conocimiento diseñado para gestionar y analizar información relacionada con proyectos de investigación.
+            Estos repositorios permiten almacenar datos detallados sobre los elementos que componen un proyecto, las
+            relaciones entre ellos y su contexto dentro del proceso de investigación. A continuación, se explica qué
+            representan, de qué están compuestos y cómo están escritos:</p>
+
+          <h3>¿Qué representan?</h3>
+          <p>Un repositorio de investigación es una representación digital y estructurada de los conceptos, datos y
+            relaciones presentes en un proyecto de investigación. Este modelo busca capturar y organizar:</p>
+          <ul>
+            <li>Los elementos principales de la investigación, como objetivos, estrategias metodológicas, técnicas
+              empleadas y hallazgos.</li>
+            <li>Las conexiones entre estos elementos, como qué técnicas están asociadas a qué objetivos, o qué
+              investigador es responsable de qué aspectos del proyecto.</li>
+            <li>Los datos adicionales que enriquecen el análisis, como metadatos, bibliografía y registros asociados al
+              proyecto.</li>
+
+          </ul>
+          <p>El repositorio no solo almacena información, sino que también define cómo estas piezas de información
+            interactúan, proporcionando una base semántica para consultas y análisis.</p>
+
+          <h3>¿De qué están compuestos?</h3>
+          <p>Los repositorios están compuestos por una serie de elementos estructurados que incluyen:</p>
+          <ul>
+            <li><strong>Clases:</strong> Representan las categorías principales de la información, como
+              proyecto_de_investigacion, investigador, tecnica, registro, entre otras.</li>
+            <li><strong>Propiedades de objeto:</strong> Definen las relaciones entre las clases, como Tiene_objetivo,
+              que conecta un proyecto con sus objetivos, o Es_participante, que conecta un investigador con un proyecto.
+            </li>
+            <li><strong>Propiedades de datos:</strong> Almacenan atributos específicos de las instancias, como el
+              nombre, descripción, autor o fecha de realización.</li>
+            <li><strong>Individuos (instancias):</strong> Representan casos concretos dentro del repositorio, como un
+              investigador específico o una técnica aplicada en un proyecto.</li>
+            <li><strong>Metadatos:</strong> Información adicional sobre los elementos registrados, como su fuente, fecha
+              de creación o estado.</li>
+          </ul>
+
+          <h3>¿Cómo están escritos?</h3>
+          <p>Los repositorios de investigación están escritos utilizando el formato RDF (Resource Description
+            Framework), que permite estructurar y organizar información de manera semántica. En este formato:</p>
+          <ul>
+            <li>Cada dato se representa como una "tripla", formada por un sujeto, un predicado y un objeto. Por ejemplo:
+              <strong>
+                < proyecto1 Tiene_objetivo objetivo1>
+              </strong>. Esto indica que el proyecto1 tiene como objetivo el objetivo1.
+            </li>
+            permiten trabajar con grandes volúmenes de datos sin comprometer el rendimiento.</li>
+            <li>Utilizan estándares como OWL (Web Ontology Language) para definir las clases y relaciones con mayor
+              precisión.</li>
+            <li>Pueden incluir inferencias automáticas realizadas por un razonador, lo que permite deducir nueva
+              información a partir de los datos existentes.</li>
+          </ul>
+
+          <p>Los repositorios de investigación están construidos sobre la ontología ya referida en esta pagina que
+            define las clases, propiedades y relaciones que estructuran el conocimiento del dominio. La ontología actúa
+            como una guía que garantiza la
+            coherencia y la semántica de los datos almacenados, permitiendo no solo su uso en aplicaciones como el
+            programa Ontology Viewer, sino también en otras herramientas ampliamente utilizadas como Protégé. Protégé,
+            por ejemplo, permite visualizar y editar la ontología, analizar su consistencia e incluso realizar consultas
+            avanzadas para explorar datos específicos. Esto hace que los repositorios sean altamente reutilizables y
+            versátiles, ofreciendo compatibilidad con múltiples plataformas y favoreciendo la interoperabilidad en
+            diferentes entornos de análisis.</p>
+
+            <div class="container px-4 py-5" id="custom-cards">
+              <h2 class="pb-2 border-bottom">Repositorios Disponibles</h2>
+          
+              <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                  <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/moon-1.PNG');background-attachment: fixed;">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                      <h3 class="pt-5 mt-5 mb-4 h5 lh-1 fw-bold">Repositorio vacio, para explorar y comenzar uno propio</h3>
+                      <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                          <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                          <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                          <a href="resources/ontologia_vacia.rdf" download="repositorio_vacio.pdf"><small>Descargar</small></a>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="col">
+                  <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/moon-2.PNG');background-attachment: fixed;">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                      <h3 class="pt-5 mt-5 mb-4 h5 lh-1 fw-bold">Repositorio con una investigacion</h3>
+                      <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                          <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                          <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                          <a href="resources/ontologia_1_ejemplo.rdf" download="repositorio_ejemplo.pdf"><small>Descargar</small></a>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="col">
+                  <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/moon-3.PNG'); background-attachment: fixed; ">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                      <h3 class="pt-5 mt-5 mb-4 h5 lh-1 fw-bold">Repositorio con tres investigaciones</h3>
+                      <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                          <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                          <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                          <a href="resources/ontologia_3_ejemplos.rdf" download="repositorio_completo.pdf"><small>Descargar</small></a>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <h3>Conclusión</h3>
+          <p>Los repositorios de investigación son un modelo semántico robusto que permite almacenar, organizar y
+            analizar datos de investigación de manera estructurada. Su diseño basado en estándares como RDF y OWL los
+            hace ideales para ser explorados y visualizados en aplicaciones como el programa Ontology Viewer,
+            maximizando su utilidad para investigadores y analistas.</p>
+        </article>
+
 
 
       </div>
@@ -518,7 +656,8 @@
             <h4 class="fst-italic">Favoritos</h4>
             <ul class="list-unstyled">
               <li>
-                <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="./documentacion.html#blog-fast-guide">
+                <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                  href="./documentacion.html#blog-fast-guide">
                   <img src="./images/first_steps.png" width="100%" height="96" focusable="false">
                   <div class="col-lg-8">
                     <h6 class="mb-0">Guía rápida para usar Ontology Viewer</h6>
@@ -527,7 +666,8 @@
                 </a>
               </li>
               <li>
-                <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                  href="#">
                   <img src="./images/excelpng.png" width="100%" height="96" focusable="false">
                   <div class="col-lg-8">
                     <h6 class="mb-0">Guia para arrancar un repositorio nuevo con Excel</h6>
@@ -536,11 +676,15 @@
                 </a>
               </li>
               <li>
-                <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
-                  <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+                <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                  href="./documentacion.html#blog-repositories">
+                  <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777"></rect>
+                  </svg>
                   <div class="col-lg-8">
-                    <h6 class="mb-0">Longer blog post title: This one has multiple lines!</h6>
-                    <small class="text-body-secondary">January 13, 2024</small>
+                    <h6 class="mb-0">Repositorios de investigacion</h6>
+                    <small class="text-body-secondary">Noviembre 28, 2024</small>
                   </div>
                 </a>
               </li>
@@ -551,7 +695,7 @@
             crossorigin="anonymous"></script>
         </div>
       </div>
-      
+
     </div>
 
 

@@ -1,0 +1,1189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns="http://www.semanticweb.org/tesis_inv_cualitativa#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#notas_de_campo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#registro"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#participante"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#soporte"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto_u_objeto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#texto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#video"/>
+    <rdfs:comment>Tipo de registro: Notas de campo</rdfs:comment>
+    <rdfs:label>Notas de campo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Met_insumo_para_producir">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#metadato"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#reporte"/>
+    <rdfs:comment>Metadato como insumo para producir reporte</rdfs:comment>
+    <rdfs:label>Metadato es insumo para producir</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Tiene_pregunta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#entrevista"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#pregunta"/>
+    <rdfs:comment>Entrevista tiene pregunta</rdfs:comment>
+    <rdfs:label>Tiene pregunta</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#documento">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto_u_objeto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#documento_enriquecido"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#notas_de_campo"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#participante"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#registro"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#respuesta_a_entrevista"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#soporte"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#texto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#video"/>
+    <rdfs:comment>Tipo de sujeto u objeto: documento</rdfs:comment>
+    <rdfs:label>Documento</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#objetivo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#formulacion"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#observacion"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#proyecto_de_investigacion"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica"/>
+    <rdfs:comment>Objetivo de investigación</rdfs:comment>
+    <rdfs:label>Objetivo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Relacionado_a_registro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Se_interpreta"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#interpretacion_de_dato"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#registro"/>
+    <rdfs:comment>Interpretación de dato relacionado a un registro</rdfs:comment>
+    <rdfs:label>Relacionado a registro</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N99ace2660a524cf4b4f1bb6a0158ef05">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Responde_a_pregunta"/>
+    <rdf:rest rdf:nodeID="N4cfeb5bd38df403885cbb81ea55b5ad4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#respuesta_a_entrevista">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#registro"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#soporte"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto_u_objeto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#texto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#video"/>
+    <rdfs:comment>Registro de respuesta a entrevista</rdfs:comment>
+    <rdfs:label>Respuesta a entrevista</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Conclusiones">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#reporte"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Conclusiones de un reporte</rdfs:comment>
+    <rdfs:label>Conclusiones</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Autor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:nodeID="N0959e13106074138881cc8248434c644"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Autor de marco teórico o bibliografía</rdfs:comment>
+    <rdfs:label>Autor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Tiene_marco_teorico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#proyecto_de_investigacion"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#marco_teorico"/>
+    <rdfs:comment>Proyecto de investigación tiene marco teórico</rdfs:comment>
+    <rdfs:label>Tiene marco teórico</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Ajuste_psicosocial,_bienestar_subjetivo_y_ocio_en_adultos_mayores_jubilados_mexicanos._Publicado_en_Revista_Enseñanza_e_Investigación_en_Psicología,_vol._20,_núm._3,_pp._316-325">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#bibliografia"/>
+    <ns:Titulo>Ajuste psicosocial, bienestar subjetivo y ocio en adultos mayores jubilados mexicanos. Publicado en Revista Enseñanza e Investigación en Psicología, vol. 20, núm. 3, pp. 316-325</ns:Titulo>
+    <ns:Autor>Quiroz et al. (2015)</ns:Autor>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N93f67340c0834194ad32b0bf3fab0111">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto_u_objeto"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Soportado_en">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#registro"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#soporte"/>
+    <rdfs:comment>Donde se soporta un registro</rdfs:comment>
+    <rdfs:label>Soportado en</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Fecha_de_realizacion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica_sobre_sujeto_u_objeto"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Data property de fechas de realización</rdfs:comment>
+    <rdfs:label>Fecha de realización</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Es_parte_del_marco_teorico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#bibliografia"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#marco_teorico"/>
+    <rdfs:comment>Elementos bibliográficos son parte del marco teórico</rdfs:comment>
+    <rdfs:label>Es parte del marco teórico</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#TIene_respuesta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#pregunta"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#respuesta_a_entrevista"/>
+    <rdfs:comment>Respuesta de pregunta</rdfs:comment>
+    <rdfs:label>Tiene respuesta</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Alcanza_objetivo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#reporte"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#objetivo"/>
+    <rdfs:comment>Un reporte cumple con o alcanza objetivo</rdfs:comment>
+    <rdfs:label>Alcanza objetivo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Inf_insumo_para_producir">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#informacion"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#reporte"/>
+    <rdfs:comment>Información como insumo para producir reporte</rdfs:comment>
+    <rdfs:label>Información es insumo para producir</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#estrategia_metodologica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#formulacion"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#investigador"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#marco_teorico"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#objetivo"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#observacion"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#pregunta"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#proyecto_de_investigacion"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica"/>
+    <rdfs:comment>Estrategia metodológica de proyecto de investigación</rdfs:comment>
+    <rdfs:label>Estrategia Metodológica</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne5a4497415994400a39f2f4ecd2d7689">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#marco_teorico"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Genera">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica_sobre_sujeto_u_objeto"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#registro"/>
+    <rdfs:comment>Tecnica sobre sujeto u objeto genera registro</rdfs:comment>
+    <rdfs:label>Genera</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto_u_objeto">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#campo"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#texto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#video"/>
+    <rdfs:comment>Clase padre que modela sujetos u objetos</rdfs:comment>
+    <rdfs:label>Sujeto u objeto</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Tiene_objetivo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#proyecto_de_investigacion"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#objetivo"/>
+    <rdfs:comment>Proyecto de investigación tiene objetivo</rdfs:comment>
+    <rdfs:label>Tiene objetivo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3b47541e82a849a0b955a93ca3dfe2d0">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#participante"/>
+    <rdf:rest rdf:nodeID="Nc7c6f7275f0d42ba811c82e3c6ac96f7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Encuesta_de_Generaciones_y_Género_2022">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#documento"/>
+    <ns:Descripcion>Los datos se obtienen específicamente de la Encuesta de Generaciones y Género (EGyG) 2022 en Uruguay, que incluye a personas de 65 años y más, permitiendo explorar aspectos de satisfacción en áreas clave de la vida como las relaciones familiares, la condición laboral o de retiro, y el sentimiento de felicidad.</ns:Descripcion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Se_reformula">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#reformulacion"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#formulacion"/>
+    <rdfs:comment>Reformulación del proyecto</rdfs:comment>
+    <rdfs:label>Se reformula</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Valor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:nodeID="N03e0d3c91c0a4c28840ff47d4b868699"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Valor generico de cierta instancia</rdfs:comment>
+    <rdfs:label>Valor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Reporta_proyecto">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#reporte"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#proyecto_de_investigacion"/>
+    <rdfs:label>Reporta proyecto</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Informe_web_bps">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#soporte"/>
+    <ns:Nombre>Asesoría General en Seguridad Social Comentarios de Seguridad Social Nº 108 Febrero 2024</ns:Nombre>
+    <ns:Ubicación>https://www.bps.gub.uy/bps/file/21469/1/108.-brecha-de-genero-en-el-bienestar-de-las-personas-mayores-solas.-a.-gallo-y-i.-nunez.pdf</ns:Ubicación>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#informacion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#analisis"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#metadato"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#reporte"/>
+    <rdfs:comment>Información generada a partir de datos</rdfs:comment>
+    <rdfs:label>Información</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Aplica_una_o_varias">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#estrategia_metodologica"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica"/>
+    <rdfs:comment>Una estrategia metodológica aplica una o varias tecnicas</rdfs:comment>
+    <rdfs:label>Aplica una o varias</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Informe_Economía_y_Felicidad_entre_los_uruguayos">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#bibliografia"/>
+    <ns:Titulo>Informe Economía y Felicidad entre los uruguayos</ns:Titulo>
+    <ns:Autor>Opción Consultores (2023)</ns:Autor>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Descripcion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:nodeID="N6a0b0bd472b343f88ce99e5691f043a6"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Data property descripción de una clase</rdfs:comment>
+    <rdfs:label>Descripción</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_descriptivo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#analisis"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#informacion"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#metadato"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#reporte"/>
+    <rdfs:comment>Esquema de clasificación descriptivo para el análisis de datos</rdfs:comment>
+    <rdfs:label>Esquema de clasificación descriptivo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Se_interpreta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#registro"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#interpretacion_de_dato"/>
+    <rdfs:comment>Interpretación de un registro</rdfs:comment>
+    <rdfs:label>Se interpreta</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Actividad_remunerada,_retiro_y_vejez._Una_mirada_de_género">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#bibliografia"/>
+    <ns:Titulo>Actividad remunerada, retiro y vejez. Una mirada de género</ns:Titulo>
+    <ns:Autor>Gallo y Santos (2022)</ns:Autor>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6a0b0bd472b343f88ce99e5691f043a6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Nd46f047155df4479b2ae65f6e2d7c4c4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Es_participante_de">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#participante"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto"/>
+    <rdfs:comment>Participantes de Sujetos</rdfs:comment>
+    <rdfs:label>Es participante de</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_analitico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#analisis"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#estrategia_metodologica"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#investigador"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#observacion"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#pregunta"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#proyecto_de_investigacion"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica"/>
+    <rdfs:comment>Esquema de clasificación analítico para el análisis de datos</rdfs:comment>
+    <rdfs:label>Esquema de clasificación analítico</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7429627c17af4c618186f67e88545745">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#investigador"/>
+    <rdf:rest rdf:nodeID="N3b47541e82a849a0b955a93ca3dfe2d0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#reformulacion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Clase que modela una reformulación</rdfs:comment>
+    <rdfs:label>Reformulación</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N294605d609a94826b6afa1233882ffc2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Na8f0255a8a224c93a7f610f2570663b3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#registro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#campo"/>
+    <rdfs:subClassOf rdf:nodeID="Nb30f72cd884342aa8d138ff2ffde5dcd"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#soporte"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto_u_objeto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#texto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#video"/>
+    <rdfs:comment>Clase padre que modela los tipos de registro</rdfs:comment>
+    <rdfs:label>Registro</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#tssuo2_2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica_sobre_sujeto_u_objeto"/>
+    <ns:Genera rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#reg2_no_accesible"/>
+    <ns:Relacionado_a_sujeto_u_objeto rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Encuesta_de_Generaciones_y_Género_2022"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N62556b12ff0e4a5391c8a82b97f3910b">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#registro"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#proyecto_de_investigacion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#formulacion"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica"/>
+    <rdfs:comment>Clase padre del proyecto de investigación</rdfs:comment>
+    <rdfs:label>Proyecto de Investigación</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#reg1_resumen_encuesta_de_Generaciones_y_Género_(EGyG)__2022">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#registro"/>
+    <ns:Valor>Escalas de Satisfacción con Relaciones Interpersonales:
+
+Puntuaciones en una escala de 0 a 10: Las personas mayores calificaron su satisfacción con sus relaciones familiares, específicamente con sus hijos/as. En promedio, las mujeres calificaron con 9.1 su satisfacción en esta área, mientras que los hombres otorgaron una media de 8.6.
+Distribución en niveles altos de satisfacción: Se presenta el porcentaje de personas que reportan altos niveles de satisfacción (puntuaciones de 9 o 10). En este caso, un 70% de los hombres y un 80% de las mujeres que viven solas se encuentran en este rango de satisfacción con sus hijos/as.
+Tasa de no respuesta: Aproximadamente el 28% de las mujeres y el 17% de los hombres optaron por no responder preguntas relacionadas con la satisfacción en sus relaciones familiares, lo cual se interpreta como un indicio de ambivalencia o tensiones no expresadas.
+Satisfacción con la Actividad Laboral:
+
+Puntuación media de satisfacción: En cuanto a la satisfacción con la situación laboral o de actividad, las mujeres mayores reportaron una media de satisfacción de 8 puntos, mientras que los hombres reportaron una media de 7.3.
+Distribución por niveles de satisfacción: Los datos se dividen en rangos de insatisfacción (0-4), satisfacción neutral (5-8) y máxima satisfacción (9-10). Las mujeres presentan 8 puntos porcentuales más que los hombres en los niveles de satisfacción más altos (9-10), mientras que los hombres tienen 10 puntos porcentuales más en los niveles de insatisfacción.
+Sentimiento de Felicidad:
+
+Distribución de la felicidad en escala de 0 a 10: La EGyG 2022 reporta un 86.8% de las personas entre 18 y 64 años que se ubicaron en la escala de 7 o más, mientras que en mayores de 65 años, el 84.1% reportó sentirse feliz en los niveles superiores (7-10). Las mujeres en la escala superior (9-10) tienen una ventaja de 21 puntos porcentuales frente a los hombres.
+Brecha de felicidad entre quienes viven solos y acompañados: Entre las personas mayores, la encuesta reporta que aquellos que viven acompañados presentan un 85.2% de felicidad en comparación con el 81.6% de los que viven solos. Esta diferencia se acentúa al desagregar los datos por género, con las mujeres reportando niveles más altos de felicidad.</ns:Valor>
+    <ns:Se_interpreta rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#idd1_2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd46f047155df4479b2ae65f6e2d7c4c4">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#objetivo"/>
+    <rdf:rest rdf:nodeID="N9f820563bc364c71aee192cf9186af90"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#interpretacion_de_dato">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Clase que modela la interpretación de un dato</rdfs:comment>
+    <rdfs:label>Interpretación de dato</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Relacionado_a_sujeto_u_objeto">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica_sobre_sujeto_u_objeto"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto_u_objeto"/>
+    <rdfs:comment>Tecnica sobre sujeto u objeto se relacion con el sujeto u objeto</rdfs:comment>
+    <rdfs:label>Relacionado a sujeto u objeto</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Responde_a_pregunta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#TIene_respuesta"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#respuesta_a_entrevista"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#pregunta"/>
+    <rdfs:comment>Relaciona la respuesta a entrevista con la pregunta</rdfs:comment>
+    <rdfs:label>Responde a pregunta</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Tiene_esquema_de_clasificacion_descriptiva">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#interpretacion_de_dato"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_descriptivo"/>
+    <owl:propertyChainAxiom rdf:nodeID="Ne05054b025024b8ab0cad1556318bc6c"/>
+    <rdfs:comment>Tiene esquema de clasificación descriptivo</rdfs:comment>
+    <rdfs:label>Tiene esquema de clasificación descriptiva</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Nucleo_tematico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Nucleo tematico de entrevistas</rdfs:comment>
+    <rdfs:label>Nucleo temático</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#investigador">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#formulacion"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#marco_teorico"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#objetivo"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#observacion"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#pregunta"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#proyecto_de_investigacion"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica"/>
+    <rdfs:comment>Investigador que participa de uno o mas proyectos</rdfs:comment>
+    <rdfs:label>Investigador</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neb8e97f3dcda4dfc82ac29169b6733a8">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#pregunta"/>
+    <rdf:rest rdf:nodeID="N2263c48316534f0fa0ca62256b3f5352"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndcfa72f296ec4fc2b8ba0415ae5f5c24">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_descriptivo"/>
+    <rdf:rest rdf:nodeID="N2399e20a6f9d4632a95c42eee2e1ae7b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#campo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Clase padre de la fase de campo</rdfs:comment>
+    <rdfs:label>Campo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#formulacion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Clase padre de la fase de formulación</rdfs:comment>
+    <rdfs:label>Formulación</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Es_de_entrevista">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Tiene_pregunta"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#pregunta"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#entrevista"/>
+    <rdfs:comment>Relaciona las preguntas con las entrevistas</rdfs:comment>
+    <rdfs:label>Es de entrevista</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9b94b535a5ef44d7b7ebb1325f25627c">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Diferencias_de_género_en_el_bienestar_de_personas_mayores_que_viven_solas">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#proyecto_de_investigacion"/>
+    <ns:Descripcion>El estudio busca entender cómo varían los niveles de satisfacción y bienestar entre hombres y mujeres mayores que viven solos en Uruguay. Para esto, se examinan indicadores específicos como las relaciones con hijos, la satisfacción con la actividad laboral y el sentimiento de felicidad.</ns:Descripcion>
+    <ns:Define rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Revisión_Bibliográfica_Contextual"/>
+    <ns:Tiene_objetivo rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Analizar_la_brecha_de_género_en_el_bienestar_de_las_personas_mayores_de_65_años_que_viven_solas"/>
+    <ns:Tiene_objetivo rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Profundizar_en_los_factores_de_bienestar_desde_una_perspectiva_de_género"/>
+    <ns:Tiene_objetivo rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Aportar_datos_que_contribuyan_al_desarrollo_de_políticas_públicas_orientadas_al_bienestar_de_las_personas_mayores"/>
+    <ns:Tiene_bibliografia rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Actividad_remunerada,_retiro_y_vejez._Una_mirada_de_género"/>
+    <ns:Tiene_bibliografia rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Satisfacción,_bienestar,_y_valoración_de_la_vida_en_personas_mayores,_un_análisis_de_aspectos_claves_del_riesgo_de_soledad_a_partir_de_la_encuesta_de_generaciones_y_género_de_Uruguay"/>
+    <ns:Tiene_bibliografia rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Effects_of_Life_Course_Transitions_on_the_Quality_of_Relationships_Between_Adult_Children_and_Their_Parents._Publicado_en_Journal_of_Marriage_and_the_Family"/>
+    <ns:Tiene_bibliografia rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Taller_Abordando_la_Vejez:_Mitos,_Realidades,_Actitudes_y_Sentimientos_frente_a_la_Vejez_de_los_familiares_mayores"/>
+    <ns:Tiene_bibliografia rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Informe_Economía_y_Felicidad_entre_los_uruguayos"/>
+    <ns:Tiene_bibliografia rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Ajuste_psicosocial,_bienestar_subjetivo_y_ocio_en_adultos_mayores_jubilados_mexicanos._Publicado_en_Revista_Enseñanza_e_Investigación_en_Psicología,_vol._20,_núm._3,_pp._316-325"/>
+    <ns:Es_participante rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Soc._Alejandra_Gallo"/>
+    <ns:Es_participante rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#T.S._Inés_Núñez"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Objetivo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:nodeID="N9e4a757670074200805767429c3b6180"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Objetivo de cierta instancia de cierta clase</rdfs:comment>
+    <rdfs:label>Objetivo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#documento_enriquecido">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#registro"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#participante"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#soporte"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto_u_objeto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#texto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#video"/>
+    <rdfs:comment>Registro de documento enriquecido</rdfs:comment>
+    <rdfs:label>Documento enriquecido</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#reporte">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#analisis"/>
+    <rdfs:comment>Reporte de investigación</rdfs:comment>
+    <rdfs:label>Reporte</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Brecha_de_género_en_el_bienestar_de_las_personas_mayores_solas">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#reporte"/>
+    <ns:Concluciones>Las mujeres mayores reportan una satisfacción ligeramente superior con las relaciones familiares en comparación con los hombres, especialmente en la relación con sus hijos. Sin embargo, una mayor proporción de mujeres elige no responder preguntas sobre estas relaciones, lo que sugiere posibles vínculos más complejos o ambivalentes.</ns:Concluciones>
+    <ns:Concluciones>Estudios previos indican que la satisfacción en estas relaciones varía según cambios en la salud, estado civil y expectativas de cuidado, lo que refleja la influencia de roles y mandatos de género.</ns:Concluciones>
+    <ns:Concluciones>Las mujeres reportan una mayor satisfacción en su situación laboral que los hombres, con una puntuación media de 8 frente a 7.3. Esto podría deberse a las diferencias en trayectorias laborales y en el ajuste al retiro, ya que los hombres enfrentan una transición abrupta de actividad remunerada, mientras que las mujeres suelen combinar roles de cuidado y trabajo doméstico, generando menor impacto en la transición.</ns:Concluciones>
+    <ns:Concluciones>La encuesta evidencia que las mujeres mayores experimentan mayores niveles de felicidad en comparación con los hombres. Esta diferencia podría estar relacionada con la satisfacción en otras áreas de la vida, como las relaciones interpersonales.</ns:Concluciones>
+    <ns:Concluciones>El estudio destaca la relevancia de entender estas brechas desde una perspectiva de género para mejorar políticas de bienestar. También sugiere la importancia de abordar la soledad en la vejez, un tema que está ganando interés en la agenda pública y de políticas en Uruguay.</ns:Concluciones>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#observacion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#pregunta"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#proyecto_de_investigacion"/>
+    <rdfs:comment>Técnica de observación</rdfs:comment>
+    <rdfs:label>Observación</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4c2ca6c6775340f59f38eae852dec8cd">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#soporte"/>
+    <rdf:rest rdf:nodeID="Nca5926be6a57471d8742f9765aa0b04d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2a5004501c8444f09d5bc6df8881a483">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N9726a93e86374ae1a843156c06fd7ad5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Ubicacion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#soporte"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Usado para especificar ubicaciones</rdfs:comment>
+    <rdfs:label>Ubicación</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <owl:inverseOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Nombre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:nodeID="Ndd405cfade3747459031d63aa84e5d7e"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Data property para nombre de cierta instancia de una clase</rdfs:comment>
+    <rdfs:label>Nombre</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#soporte">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#campo"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto_u_objeto"/>
+    <rdfs:comment>Clase padre que modela los distintos tipos de soporte de registros</rdfs:comment>
+    <rdfs:label>Soporte</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9c4f4b12a1cc425a9c8df50b105522b5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N62ec0280308c40a6bc3dfcd19c5fd28f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9bfe0b299abb4b759f5bbd1becb2d800">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#campo"/>
+    <rdf:rest rdf:nodeID="Ncea8bcc09ba743bcb14813495097859e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncea8bcc09ba743bcb14813495097859e">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#formulacion"/>
+    <rdf:rest rdf:nodeID="N77315e5dfe2e4ca18268f4b23a73666c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#idd2_2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#interpretacion_de_dato"/>
+    <ns:Relacionado_a_informacion rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#los_roles_de_género_influyen_en_cómo_se_perciben_y_valoran_las_relaciones_filiales_en_la_vejez"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Relacionado_a_informacion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#interpretacion_de_dato"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#informacion"/>
+    <rdfs:comment>Interpretación de dato se relaciona con información</rdfs:comment>
+    <rdfs:label>Relacionado a información</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Titulo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:nodeID="N2a5004501c8444f09d5bc6df8881a483"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Usado para incluir titulos</rdfs:comment>
+    <rdfs:label>Título</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#participante">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#campo"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#registro"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#respuesta_a_entrevista"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#soporte"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto_u_objeto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#texto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#video"/>
+    <rdfs:comment>Participante de sujeto u objeto</rdfs:comment>
+    <rdfs:label>Participante</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#video">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#soporte"/>
+    <rdfs:comment>Soporte de video</rdfs:comment>
+    <rdfs:label>Video</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne85815108f0e41118cefd170681b84bc">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_analitico"/>
+    <rdf:rest rdf:nodeID="Na2a8bb880d3a47cbab4e67b8c52899e7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#analisis_documental">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_analitico"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#estrategia_metodologica"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#investigador"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#marco_teorico"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#objetivo"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#pregunta"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#proyecto_de_investigacion"/>
+    <rdfs:comment>Tecnica de análisis documental</rdfs:comment>
+    <rdfs:label>Análisis Documental</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5102caa5105148bd862edc3e938f33ae">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#soporte"/>
+    <rdf:rest rdf:nodeID="Nc1803b51b031498682ba11a7756f7e7d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Se_aplica_en">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto_u_objeto"/>
+    <owl:propertyChainAxiom rdf:nodeID="Na8a964a969574961ba327837c21900b2"/>
+    <rdfs:comment>Aplicación de la tecnica sobre sujeto u objeto</rdfs:comment>
+    <rdfs:label>Se aplica en</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#pregunta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#formulacion"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#proyecto_de_investigacion"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica"/>
+    <rdfs:comment>Pregunta de entrevista</rdfs:comment>
+    <rdfs:label>Pregunta</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Aportar_datos_que_contribuyan_al_desarrollo_de_políticas_públicas_orientadas_al_bienestar_de_las_personas_mayores">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#objetivo"/>
+    <ns:Descripcion>Para profundizar en el contexto y en la interpretación de los resultados, el estudio incluye una revisión de la literatura que abarca investigaciones previas sobre las relaciones interpersonales en la adultez, el impacto de la transición al retiro y el bienestar general en personas mayores. Esta revisión permite relacionar los hallazgos empíricos con conceptos como los mandatos de género y los roles familiares</ns:Descripcion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#idd1_2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#interpretacion_de_dato"/>
+    <ns:Relacionado_a_informacion rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#niveles_de_satisfacción_diferenciados_entre_hombres_y_mujeres_en_la_relación_con_sus_hijos/as"/>
+    <ns:Tiene_esquema_de_clasificacion_descriptiva rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Puntuaciones_en_una_escala_de_0_a_10"/>
+    <ns:Tiene_esquema_de_clasificacion_descriptiva rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Distribución_en_niveles_altos_de_satisfacción"/>
+    <ns:Tiene_esquema_de_clasificacion_descriptiva rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Tasa_de_no_respuesta"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nebac4aa9126b48558b08f19a9d6fbece">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Categoria_superior"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Relacionado_a_tecnica_sobre_sujeto_u_objeto">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica_sobre_sujeto_u_objeto"/>
+    <rdfs:comment>Técnica relacionada con Técnica sobre sujeto u objeto</rdfs:comment>
+    <rdfs:label>Relacionado a técnica sobre sujeto u objeto</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Origen_de_reformulacion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#analisis"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#reformulacion"/>
+    <rdfs:comment>Modela el origen de la reformulación</rdfs:comment>
+    <rdfs:label>Origen de reformulación</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4d1587e7cda141698eb24833665bf0d5">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nca5926be6a57471d8742f9765aa0b04d">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto_u_objeto"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#marco_teorico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#formulacion"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#objetivo"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#observacion"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#proyecto_de_investigacion"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica"/>
+    <rdfs:comment>Marco teórico del proyecto</rdfs:comment>
+    <rdfs:label>Marco Teórico</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2ad784f06186444990e0a3752b575989">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#objetivo"/>
+    <rdf:rest rdf:nodeID="Ne4a4c44bef8a4230b5e7b08fc5c527d6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4cfeb5bd38df403885cbb81ea55b5ad4">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Es_de_entrevista"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Tiene_respuestas">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#entrevista"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#respuesta_a_entrevista"/>
+    <rdfs:comment>Respuesta de entrevista</rdfs:comment>
+    <rdfs:label>Tiene respuestas</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfb2e042c56b34051bbf8d194fcf85297">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Responde_a_entrevista">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Tiene_respuestas"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#respuesta_a_entrevista"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#entrevista"/>
+    <owl:propertyChainAxiom rdf:nodeID="Nebd3204a128849d09af2d91dc6c870fc"/>
+    <owl:propertyChainAxiom rdf:nodeID="N99ace2660a524cf4b4f1bb6a0158ef05"/>
+    <rdfs:comment>Relaciona respuestas a entrevistas</rdfs:comment>
+    <rdfs:label>Responde a entrevista</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#formulacion"/>
+    <rdfs:comment>Clase padre que modela las diferentes tecnicas.</rdfs:comment>
+    <rdfs:label>Técnica</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Es_participante">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#proyecto_de_investigacion"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#investigador"/>
+    <rdfs:comment>Investigador es participante de proyecto de investigación</rdfs:comment>
+    <rdfs:label>Es participante</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#metadato">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#analisis"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#reporte"/>
+    <rdfs:comment>Metadato para el análisis de datos</rdfs:comment>
+    <rdfs:label>Metadato</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#niveles_de_satisfacción_diferenciados_entre_hombres_y_mujeres_en_la_relación_con_sus_hijos/as">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#informacion"/>
+    <ns:Valor>El análisis sugiere que los roles de género influyen en cómo se perciben y valoran las relaciones filiales en la vejez, lo que ofrece un punto de partida para investigaciones futuras sobre los vínculos familiares y su impacto en el bienestar emocional de las personas mayores.</ns:Valor>
+    <ns:Inf_insumo_para_producir rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Brecha_de_género_en_el_bienestar_de_las_personas_mayores_solas"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc1803b51b031498682ba11a7756f7e7d">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto_u_objeto"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Metadato">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:nodeID="N294605d609a94826b6afa1233882ffc2"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#metadato"/>
+    <rdfs:comment>Relaciona esquema de clasificación descriptivo o registro con metadatos</rdfs:comment>
+    <rdfs:label>Metadato</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#entrevista">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_analitico"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#estrategia_metodologica"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#investigador"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#marco_teorico"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#objetivo"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#pregunta"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#proyecto_de_investigacion"/>
+    <rdfs:comment>Técnica de entrevista</rdfs:comment>
+    <rdfs:label>Entrevista</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncc9df7bcb19d4cc498242ca354b1921b">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica_sobre_sujeto_u_objeto"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb30f72cd884342aa8d138ff2ffde5dcd">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Nd3a7b875d3244220bf334c504ff19532"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Soc._Alejandra_Gallo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#investigador"/>
+    <ns:Nombre>Soc. Alejandra Gallo</ns:Nombre>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne05054b025024b8ab0cad1556318bc6c">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Tiene_esquema_de_clasificacion_descriptiva"/>
+    <rdf:rest rdf:nodeID="Nebac4aa9126b48558b08f19a9d6fbece"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2399e20a6f9d4632a95c42eee2e1ae7b">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#informacion"/>
+    <rdf:rest rdf:nodeID="N86b8ec8981964b59b3192b1637ad5c24"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#tssuo1_2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica_sobre_sujeto_u_objeto"/>
+    <ns:Genera rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#reg1_resumen_encuesta_de_Generaciones_y_Género_(EGyG)__2022"/>
+    <ns:Relacionado_a_sujeto_u_objeto rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Personas_mayores_de_65_años_en_Uruguay_que_viven_solas"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1829712392234a28b3ea56af993200ee">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#marco_teorico"/>
+    <rdf:rest rdf:nodeID="N2ad784f06186444990e0a3752b575989"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Effects_of_Life_Course_Transitions_on_the_Quality_of_Relationships_Between_Adult_Children_and_Their_Parents._Publicado_en_Journal_of_Marriage_and_the_Family">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#bibliografia"/>
+    <ns:Titulo>Effects of Life Course Transitions on the Quality of Relationships Between Adult Children and Their Parents. Publicado en Journal of Marriage and the Family</ns:Titulo>
+    <ns:Autor>Kaufman y Uhlenberg (1998)</ns:Autor>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Personas_mayores_de_65_años_en_Uruguay_que_viven_solas">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto_u_objeto"/>
+    <ns:Descripcion>La población en la que se basa este estudio está compuesta por personas mayores de 65 años en Uruguay que viven solas. Dentro de esta población general, el estudio distingue entre hombres y mujeres para analizar cómo se manifiestan las diferencias de género en su bienestar.</ns:Descripcion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Tasa_de_no_respuesta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_descriptivo"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd3bac682d37a4f30af252f047b3dc459">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#reporte"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#reg2_no_accesible">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#registro"/>
+    <ns:Valor>Revisión de Estudios Previos y Bibliografía:
+
+Estudios como el de Kaufman y Uhlenberg (1998) aportan información cualitativa sobre cómo ciertos hitos de la vida (como la jubilación o el cambio de estado civil) afectan la calidad de las relaciones en la vejez.
+Estudios recientes, como el de Korotky (2017), proveen datos sobre el impacto de las demandas de cuidado y cómo afectan las relaciones intergeneracionales en la vejez.
+Datos Contextuales sobre el Mercado Laboral y la Jubilación:
+
+La investigación también cita datos sobre la división sexual del trabajo en Uruguay, mostrando que las mujeres, durante la vida activa, participan menos en el mercado laboral y dedican más horas al trabajo no remunerado en el hogar, en comparación con los hombres. Estos datos son utilizados para interpretar la satisfacción diferencial en la transición a la jubilación.</ns:Valor>
+    <ns:Se_interpreta rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#idd2_2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#bibliografia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#formulacion"/>
+    <rdfs:comment>Elementos bibliograficos</rdfs:comment>
+    <rdfs:label>Bibliografía</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Percepción_de_la_Actividad_Laboral_y_Transición_al_Retiro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_analitico"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1de4f56d767a4ac58a53b8b9a0842cc5">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#estrategia_metodologica"/>
+    <rdf:rest rdf:nodeID="Nfb2e042c56b34051bbf8d194fcf85297"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Satisfacción,_bienestar,_y_valoración_de_la_vida_en_personas_mayores,_un_análisis_de_aspectos_claves_del_riesgo_de_soledad_a_partir_de_la_encuesta_de_generaciones_y_género_de_Uruguay">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#bibliografia"/>
+    <ns:Titulo>Satisfacción, bienestar, y valoración de la vida en personas mayores, un análisis de aspectos claves del riesgo de soledad a partir de la encuesta de generaciones y género de Uruguay</ns:Titulo>
+    <ns:Autor>Gallo y Núñez (2023)</ns:Autor>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Tipo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:nodeID="N9c4f4b12a1cc425a9c8df50b105522b5"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Usado para incluir tipos</rdfs:comment>
+    <rdfs:label>Tipo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#analisis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Clase padre de la fase de análisis</rdfs:comment>
+    <rdfs:label>Análisis</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Pauta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#entrevista"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Pauta de entrevista</rdfs:comment>
+    <rdfs:label>Pauta</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Análisis_de_Datos">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica"/>
+    <ns:Valor>Se identifican niveles de satisfacción diferenciados entre hombres y mujeres en la relación con sus hijos/as. Las mujeres reportan una mayor satisfacción en general, pero también muestran una tasa de no respuesta más alta, lo cual puede sugerir ambivalencia en las relaciones familiares o posibles tensiones no expresadas.</ns:Valor>
+    <ns:Relacionado_a_tecnica_sobre_sujeto_u_objeto rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tssuo1_2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na2a8bb880d3a47cbab4e67b8c52899e7">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#estrategia_metodologica"/>
+    <rdf:rest rdf:nodeID="N53799f1b3a594e00997624e1c3ef2ff3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Posee_metadatos">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_descriptivo"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#metadato"/>
+    <rdfs:comment>Esquema de clasificación descriptivo posee metadatos</rdfs:comment>
+    <rdfs:label>Posee metadatos</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb15a2fdde19f420d8ab45056ce96eec3">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_descriptivo"/>
+    <rdf:rest rdf:nodeID="N6ee0f73bed624fbbb1e4e3530edb6893"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#los_roles_de_género_influyen_en_cómo_se_perciben_y_valoran_las_relaciones_filiales_en_la_vejez">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#informacion"/>
+    <ns:Valor>Se observa que las mujeres tienen, en promedio, una mayor satisfacción con su situación de retiro que los hombres, posiblemente porque las trayectorias laborales de hombres y mujeres difieren significativamente.Esta diferencia apunta a que el proceso de jubilación tiene implicaciones distintas para cada género: mientras los hombres suelen enfrentar una transición abrupta de la actividad remunerada al retiro, las mujeres transitan desde roles combinados (actividades remuneradas y no remuneradas en el hogar), lo que reduce el impacto psicológico y social del retiro. </ns:Valor>
+    <ns:Inf_insumo_para_producir rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Brecha_de_género_en_el_bienestar_de_las_personas_mayores_solas"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9f820563bc364c71aee192cf9186af90">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#reformulacion"/>
+    <rdf:rest rdf:nodeID="N93f67340c0834194ad32b0bf3fab0111"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Define">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#proyecto_de_investigacion"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#estrategia_metodologica"/>
+    <rdfs:comment>Proyecto de investigación define estrategia metodológica</rdfs:comment>
+    <rdfs:label>Define</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3be8685665b040d5b352e7ed6f2ceeb4">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#bibliografia"/>
+    <rdf:rest rdf:nodeID="Ne5a4497415994400a39f2f4ecd2d7689"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N53799f1b3a594e00997624e1c3ef2ff3">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#investigador"/>
+    <rdf:rest rdf:nodeID="Neb8e97f3dcda4dfc82ac29169b6733a8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Destino_de_reformulacion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#reformulacion"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#formulacion"/>
+    <rdfs:comment>Modela el destino de una reformulación</rdfs:comment>
+    <rdfs:label>Destino de reformulación</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N54ec7f9f42e34459979b0edc64a5700c">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_descriptivo"/>
+    <rdf:rest rdf:nodeID="N7429627c17af4c618186f67e88545745"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Relacionado_a_esquema_de_clasificacion_descriptivo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_analitico"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_descriptivo"/>
+    <rdfs:comment>Esquema de clasificación analítico se relacion con descriptivo</rdfs:comment>
+    <rdfs:label>Relacionado a esquema de clasificación descriptivo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nebd3204a128849d09af2d91dc6c870fc">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Es_generado_por"/>
+    <rdf:rest rdf:nodeID="Nc16d93a156d5444b8b2c79bb79f9252d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Es_generado_por">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Genera"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#registro"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica_sobre_sujeto_u_objeto"/>
+    <rdfs:comment>Una tecnica sobre un sujeto u objeto genera un registro</rdfs:comment>
+    <rdfs:label>Es generado por</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N77315e5dfe2e4ca18268f4b23a73666c">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#interpretacion_de_dato"/>
+    <rdf:rest rdf:nodeID="Ncc9df7bcb19d4cc498242ca354b1921b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Categoria_superior">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_descriptivo"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_descriptivo"/>
+    <rdfs:comment>Relación que modela categorización jerarquica entre esquemas de clasificación descriptivos</rdfs:comment>
+    <rdfs:label>Categoria superior</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na8a964a969574961ba327837c21900b2">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Relacionado_a_tecnica_sobre_sujeto_u_objeto"/>
+    <rdf:rest rdf:nodeID="N9d1679a0e2794886a257e20aeb0dde34"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0959e13106074138881cc8248434c644">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N3be8685665b040d5b352e7ed6f2ceeb4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#sujeto_u_objeto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#texto"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#video"/>
+    <rdfs:comment>Tipo de sujeto u objeto: sujeto</rdfs:comment>
+    <rdfs:label>Sujeto</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndd405cfade3747459031d63aa84e5d7e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N54ec7f9f42e34459979b0edc64a5700c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na6b6e0bc07284f2eb68158635efc3100">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#investigador"/>
+    <rdf:rest rdf:nodeID="N1829712392234a28b3ea56af993200ee"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Relacionado_a_tecnica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Relacionado_a_tecnica_sobre_sujeto_u_objeto"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica_sobre_sujeto_u_objeto"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica"/>
+    <rdfs:comment>Tecnica sobre sujeto u objeto se relaciona con una tecnica</rdfs:comment>
+    <rdfs:label>Relacionado a técnica</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Taller_Abordando_la_Vejez:_Mitos,_Realidades,_Actitudes_y_Sentimientos_frente_a_la_Vejez_de_los_familiares_mayores">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#bibliografia"/>
+    <ns:Titulo>Taller Abordando la Vejez: Mitos, Realidades, Actitudes y Sentimientos frente a la Vejez de los familiares mayores</ns:Titulo>
+    <ns:Autor>Korotky (2017)</ns:Autor>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neb47779153b345e9b4a22f1feb7a5583">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#marco_teorico"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N57d402c43adb42c98b9d054109e4f994">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#metadato"/>
+    <rdf:rest rdf:nodeID="N8193ab2d290844ca9b636d2e99c45090"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Tiene_esquema_de_clasificacion_analitica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#informacion"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_analitico"/>
+    <rdfs:comment>Tiene esquema de clasificación analítico</rdfs:comment>
+    <rdfs:label>Tiene esquema de clasificación analítica</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9e4a757670074200805767429c3b6180">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N1de4f56d767a4ac58a53b8b9a0842cc5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7deadc535a9f44d9ac885c0e6630420f">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#bibliografia"/>
+    <rdf:rest rdf:nodeID="Nb15a2fdde19f420d8ab45056ce96eec3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9d1679a0e2794886a257e20aeb0dde34">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Relacionado_a_sujeto_u_objeto"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2a99b22acc164a7baa772aa26f64d8f4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:nodeID="N972260103f0b4adba2595aae70da3e8e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#tecnica_sobre_sujeto_u_objeto">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Clase que modela la aplicación de una tecnica sobre un sujeto u objeto</rdfs:comment>
+    <rdfs:label>Técnica sobre sujeto u objeto</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#texto">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#soporte"/>
+    <rdfs:comment>Soporte de texto</rdfs:comment>
+    <rdfs:label>Texto</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf1a232c8384d43eca426108946becc78">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:nodeID="Ne85815108f0e41118cefd170681b84bc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N62ec0280308c40a6bc3dfcd19c5fd28f">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#marco_teorico"/>
+    <rdf:rest rdf:nodeID="N0763938639d346a9a91aecae10c56237"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Revisión_Bibliográfica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#analisis_documental"/>
+    <ns:Objetivo>Proporcionar una visión integral de la brecha de género en el bienestar de personas mayores en Uruguay.</ns:Objetivo>
+    <ns:Relacionado_a_tecnica_sobre_sujeto_u_objeto rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#tssuo2_2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9726a93e86374ae1a843156c06fd7ad5">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#bibliografia"/>
+    <rdf:rest rdf:nodeID="Neb47779153b345e9b4a22f1feb7a5583"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Profundizar_en_los_factores_de_bienestar_desde_una_perspectiva_de_género">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#objetivo"/>
+    <ns:Descripcion>Dado el interés reciente en la soledad y el bienestar de los adultos mayores en Uruguay, los resultados de esta investigación buscan ofrecer información útil para la creación o mejora de políticas de apoyo social, considerando las diferencias de género en las necesidades y experiencias de las personas mayores.</ns:Descripcion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2263c48316534f0fa0ca62256b3f5352">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#proyecto_de_investigacion"/>
+    <rdf:rest rdf:nodeID="N4d1587e7cda141698eb24833665bf0d5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb96f406ac15948e188c952a0fdf71aba">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#registro"/>
+    <rdf:rest rdf:nodeID="N4c2ca6c6775340f59f38eae852dec8cd"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Interpretacion_de_analisis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#analisis"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#reformulacion"/>
+    <rdfs:comment>Interpretación de análisis que genera reformulación</rdfs:comment>
+    <rdfs:label>Interpretación de análisis</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Revisión_Bibliográfica_Contextual">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#estrategia_metodologica"/>
+    <ns:Objetivo>La investigación utiliza datos de la Encuesta de Generaciones y Género (EGyG) 2022 en Uruguay, enfocándose en aspectos como la satisfacción con las relaciones familiares, la condición de actividad laboral y el sentimiento de felicidad. Estos datos se analizan de forma comparativa entre hombres y mujeres mayores de 65 años que viven solos, utilizando escalas de satisfacción de 0 a 10.</ns:Objetivo>
+    <ns:Aplica_una_o_varias rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Revisión_Bibliográfica"/>
+    <ns:Aplica_una_o_varias rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Análisis_de_Datos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#T.S._Inés_Núñez">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#investigador"/>
+    <ns:Nombre>T.S. Inés Núñez</ns:Nombre>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N236dbd9382a94152b47a9f0eb344ee97">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#estrategia_metodologica"/>
+    <rdf:rest rdf:nodeID="Na6b6e0bc07284f2eb68158635efc3100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Diferencias_de_Satisfacción_en_Relaciones_Interpersonales">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_analitico"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3a5ef55062784f93a962e8e3ea88552e">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#notas_de_campo"/>
+    <rdf:rest rdf:nodeID="N7b9ec364f5c641558fe8bd3b6824290c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Puntuaciones_en_una_escala_de_0_a_10">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_descriptivo"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd38d82dcbc0e4d88865d773d9458b0c7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:nodeID="N236dbd9382a94152b47a9f0eb344ee97"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc16d93a156d5444b8b2c79bb79f9252d">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#Relacionado_a_tecnica"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N972260103f0b4adba2595aae70da3e8e">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#participante"/>
+    <rdf:rest rdf:nodeID="Nb96f406ac15948e188c952a0fdf71aba"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na9e035d42d4642279d0504a86e765bb0">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#registro"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na8f0255a8a224c93a7f610f2570663b3">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_descriptivo"/>
+    <rdf:rest rdf:nodeID="N62556b12ff0e4a5391c8a82b97f3910b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6e4e37089ac14908b7f30bdc32496582">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#analisis"/>
+    <rdf:rest rdf:nodeID="N9bfe0b299abb4b759f5bbd1becb2d800"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N86b8ec8981964b59b3192b1637ad5c24">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#metadato"/>
+    <rdf:rest rdf:nodeID="Nd3bac682d37a4f30af252f047b3dc459"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Analizar_la_brecha_de_género_en_el_bienestar_de_las_personas_mayores_de_65_años_que_viven_solas">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#objetivo"/>
+    <ns:Descripcion>La investigación utiliza una mirada de género para observar cómo ciertos mandatos y roles afectan la experiencia de bienestar en la vejez. Esto incluye evaluar el impacto de las relaciones familiares y la satisfacción con la situación laboral, dos áreas influenciadas culturalmente y que presentan diferencias significativas entre hombres y mujeres.</ns:Descripcion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd3a7b875d3244220bf334c504ff19532">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#documento_enriquecido"/>
+    <rdf:rest rdf:nodeID="N3a5ef55062784f93a962e8e3ea88552e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Sentimientos_de_Felicidad">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_analitico"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne4a4c44bef8a4230b5e7b08fc5c527d6">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#proyecto_de_investigacion"/>
+    <rdf:rest rdf:nodeID="N9b94b535a5ef44d7b7ebb1325f25627c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc76781c811ca499998b64efebacfc1eb">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:nodeID="Ndcfa72f296ec4fc2b8ba0415ae5f5c24"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N03e0d3c91c0a4c28840ff47d4b868699">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="N7deadc535a9f44d9ac885c0e6630420f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Distribución_en_niveles_altos_de_satisfacción">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#esquema_de_clasificacion_descriptivo"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8193ab2d290844ca9b636d2e99c45090">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#pregunta"/>
+    <rdf:rest rdf:nodeID="Na9e035d42d4642279d0504a86e765bb0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2e701cb0e4c8463c98fb93b752498871">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:nodeID="N6e4e37089ac14908b7f30bdc32496582"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#Tiene_bibliografia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#proyecto_de_investigacion"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#bibliografia"/>
+    <rdfs:comment>Bibliografía de proyecto de investigación</rdfs:comment>
+    <rdfs:label>Tiene bibliografía</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7b9ec364f5c641558fe8bd3b6824290c">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#respuesta_a_entrevista"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0763938639d346a9a91aecae10c56237">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#observacion"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc7c6f7275f0d42ba811c82e3c6ac96f7">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#proyecto_de_investigacion"/>
+    <rdf:rest rdf:nodeID="N5102caa5105148bd862edc3e938f33ae"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6ee0f73bed624fbbb1e4e3530edb6893">
+    <rdf:first rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#informacion"/>
+    <rdf:rest rdf:nodeID="N57d402c43adb42c98b9d054109e4f994"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/tesis_inv_cualitativa#satisfacción_con_su_situación_de_retiro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/tesis_inv_cualitativa#informacion"/>
+  </rdf:Description>
+</rdf:RDF>
